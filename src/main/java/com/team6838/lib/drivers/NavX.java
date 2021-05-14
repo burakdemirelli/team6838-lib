@@ -43,8 +43,8 @@ public class NavX implements CKIMU {
     protected double mPrevAccelY = 0;
     protected double mPrevTimeAccel = 0;
 
-    private double mJerkCollisionThreshold = Constants.kCollisionDetectionJerkThreshold;
-    private double mTippingThreshold = Constants.kTippingThresholdDeg;
+    private double mJerkCollisionThreshold;
+    private double mTippingThreshold;
 
     public NavX() {
         this(SPI.Port.kMXP);
