@@ -4,7 +4,6 @@ package com.team6838.lib.drivers;
 import com.kauailabs.navx.AHRSProtocol.AHRSUpdateBase;
 import com.kauailabs.navx.frc.AHRS;
 import com.kauailabs.navx.frc.ITimestampedDataSubscriber;
-import com.team6838.Constants;
 import edu.wpi.first.wpilibj.SPI;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.geometry.Rotation2d;
