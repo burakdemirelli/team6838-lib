@@ -8,8 +8,20 @@ import edu.wpi.first.wpilibj.Solenoid;
 
 /** Add your docs here. */
 public class LED {
-    private Solenoid led;
-    public  LED(int SolenoidPort){
 
+    private Solenoid led;
+
+    public  LED(int SolenoidPort){
+        led = new Solenoid(SolenoidPort);
     }
+
+    public void turnOn(){
+        led.set(true);
+    }
+
+    public void turnOff(){
+        led.set(false);
+    }
+
+    
 }
