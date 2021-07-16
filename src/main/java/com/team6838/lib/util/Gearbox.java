@@ -8,11 +8,11 @@ public class Gearbox {
         this.gearRatio = drivenGear / drivingGear;
     }
 
-    public double getGearboxOutput(double rot){
+    public double getOutput(double rot){
         return rot*gearRatio;
     }
 
-    public double getGearRatio(){
+    public double getRatio(){
         return gearRatio;
     }
 }
