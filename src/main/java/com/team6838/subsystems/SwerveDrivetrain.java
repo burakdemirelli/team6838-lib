@@ -6,6 +6,7 @@ package com.team6838.subsystems;
 
 import com.ctre.phoenix.motorcontrol.can.TalonFX;
 import com.team6838.Constants;
+import com.team6838.lib.drivers.CKIMU;
 import com.team6838.lib.drivers.NavX;
 import com.team6838.lib.util.SwerveModule;
 
@@ -51,7 +52,7 @@ public class SwerveDrivetrain extends SubsystemBase {
     )
   );
 
-  private final NavX gyro;
+  private final CKIMU gyro;
 
   // TODO: Update these CAN device IDs to match your TalonFX + CANCoder device IDs
   // TODO: Update module offsets to match your CANCoder offsets
@@ -64,7 +65,7 @@ public class SwerveDrivetrain extends SubsystemBase {
   };
   
   /** Creates a new SwerveDrivetrain. */
-  public SwerveDrivetrain(NavX gyro) {
+  public SwerveDrivetrain(CKIMU gyro) {
     this.gyro = gyro;
     gyro.reset();
   }
