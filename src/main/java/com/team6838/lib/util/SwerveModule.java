@@ -4,13 +4,8 @@
 
 package com.team6838.lib.util;
 
-import com.ctre.phoenix.motorcontrol.FeedbackDevice;
-import com.ctre.phoenix.motorcontrol.RemoteSensorSource;
 import com.ctre.phoenix.motorcontrol.TalonFXControlMode;
 import com.ctre.phoenix.motorcontrol.can.TalonFX;
-import com.ctre.phoenix.motorcontrol.can.TalonFXConfiguration;
-import com.ctre.phoenix.sensors.CANCoder;
-import com.ctre.phoenix.sensors.CANCoderConfiguration;
 import com.team6838.Constants;
 
 import edu.wpi.first.wpilibj.DutyCycleEncoder;
@@ -20,7 +15,6 @@ import edu.wpi.first.wpilibj.kinematics.SwerveModuleState;
 import edu.wpi.first.wpilibj.util.Units;
 import edu.wpi.first.wpiutil.math.MathUtil;
 
-/** Add your docs here. */
 // ! Need to change the rotation PIDs to RoboRio - !DONE!
 // ! handle with caution
 
@@ -35,7 +29,7 @@ public class SwerveModule {
   private static final double kAngleP = 0.0;
   private static final double kAngleI = 0.0;
   private static final double kAngleD = 0.0;
-  private static final double kAngleLoopPeriod = 0.005; //update rate of PID, in seconds, set to 200hz
+  private static final double kAngleLoopPeriod = 0.005; //update rate of PID, in seconds, set to 200hz NOT IN USE
   // If you can't tune the period constant, just swap it out for the other PID controller constructer (one without period)
   // In order to use a faster loop, PID.calculate() must also run on a separate thread with the same period rate
   // TODO| look into running the .calculate() on a separeate thread
