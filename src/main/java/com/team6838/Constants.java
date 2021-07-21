@@ -9,4 +9,6 @@ public final class Constants {
 		public static final double kMaxAngularSpeed = Math.PI; // 1/2 rotation per second
 	}
 
+	public static final boolean kGyroReversed = false;
+
 }
