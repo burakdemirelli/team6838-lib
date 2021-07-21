@@ -110,7 +110,7 @@ public class SwerveModule {
     );
 
     double feetPerSecond = Units.metersToFeet(state.speedMetersPerSecond);
-    driveMotor.set(TalonFXControlMode.PercentOutput, feetPerSecond / Constants.SwerveModule.kMaxSpeed);
+    driveMotor.set(TalonFXControlMode.PercentOutput, feetPerSecond / Constants.Swerve.kMaxSpeed);
   }
 
 }
