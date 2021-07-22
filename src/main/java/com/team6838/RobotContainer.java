@@ -12,6 +12,8 @@ import edu.wpi.first.wpilibj2.command.Command;
 public class RobotContainer {
   
   private final CKIMU gyro = new NavX(SPI.Port.kMXP);
+  //or 
+  //private final CKIMU gyro = new NavX();
   private final XboxController controller = new XboxController(0);
   private final SwerveDrivetrain drivetrain = new SwerveDrivetrain(gyro);
 
